@@ -1,6 +1,17 @@
-# 🔥 코테 박살을 위한 문제 풀기 🔥
+# 🔥 코테 박살을 위한 문제 풀기 With JavaScript 🔥
 
-## 프로그래머스 With JavaScript
+## 백준
+
+### Bronze 🥉
+
+- [벌집](BAEKJOON/bronze/220413_벌집.md)
+
+### Gold 🥇
+
+- [틱택토](BAEKJOON/gold/220414_틱택토.md)
+- [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
+
+## 프로그래머스
 
 ### Lv.1
 
