@@ -1,15 +1,15 @@
 # 🔥 코테 박살을 위한 문제 풀기 With JavaScript 🔥
 
+## 이취코
+
+- [정렬된 배열에서 특정 수의 개수 구하기 : 이진탐색](이취코/이진탐색/220601_27_정렬된배열에서특정수의개수구하기.md)
+- [고정점 찾기 : 이진탐색](이취코/이진탐색/220601_28_고정점찾기.md)
+
 ## 백준
 
-### Bronze 🥉
-
-- [벌집](BAEKJOON/bronze/220413_벌집.md)
-
-### Gold 🥇
-
-- [틱택토](BAEKJOON/gold/220414_틱택토.md)
-- [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
+- [🥉 벌집](BAEKJOON/bronze/220413_벌집.md)
+- [🥇 틱택토](BAEKJOON/gold/220414_틱택토.md)
+- [🥇 커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
 
 ## 프로그래머스
 
@@ -49,3 +49,4 @@
 - [네트워크 : BFS/DFS](PROGRAMMERS/3/220514_네트워크.md)
 - [단어변환 : BFS/DFS](PROGRAMMERS/3/220516_단어변환.md)
 - [여행경로 : BFS/DFS](PROGRAMMERS/3/220517_여행경로.md)
+- [입국심사 : 이진탐색](PROGRAMMERS/3/220601_입국심사.md)
