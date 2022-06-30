@@ -26,6 +26,7 @@
 - [DFS와 BFS](BAEKJOON/silver/220629_DFS와BFS.md)
 - [미로탐색](BAEKJOON/silver/220629_미로탐색.md)
 - [바이러스](BAEKJOON/silver/220629_바이러스.md)
+- [단지번호 붙이기](BAEKJOON/silver/220630_단지번호붙이기.md)
 
 ### 🥇
 
