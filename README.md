@@ -27,11 +27,13 @@
 - [미로탐색](BAEKJOON/silver/220629_미로탐색.md)
 - [바이러스](BAEKJOON/silver/220629_바이러스.md)
 - [단지번호 붙이기](BAEKJOON/silver/220630_단지번호붙이기.md)
+- [촌수 계산](BAEKJOON/silver/220630_촌수계산.md)
 
 ### 🥇
 
 - [틱택토](BAEKJOON/gold/220414_틱택토.md)
 - [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
+- [로봇청소기](BAEKJOON/gold/220704_로봇청소기.md)
 
 ## 프로그래머스
 
