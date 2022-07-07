@@ -28,6 +28,7 @@
 - [바이러스](BAEKJOON/silver/220629_바이러스.md)
 - [단지번호 붙이기](BAEKJOON/silver/220630_단지번호붙이기.md)
 - [촌수 계산](BAEKJOON/silver/220630_촌수계산.md)
+- [맥주 마시면서 걸어가기](BAEKJOON/silver/220707_맥주마시면서걸어가기.md)
 
 ### 🥇
 
