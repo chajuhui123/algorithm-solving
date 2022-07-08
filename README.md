@@ -19,22 +19,25 @@
 ### 🥉
 
 - [벌집](BAEKJOON/bronze/220413_벌집.md)
+- [피보나치 : 동적 계획법](BAEKJOON/bronze/220704_피보나치.md)
 
 ### 🥈
 
 - [문자열집합](BAEKJOON/silver/220628_문자열집합.md)
-- [DFS와 BFS](BAEKJOON/silver/220629_DFS와BFS.md)
-- [미로탐색](BAEKJOON/silver/220629_미로탐색.md)
-- [바이러스](BAEKJOON/silver/220629_바이러스.md)
-- [단지번호 붙이기](BAEKJOON/silver/220630_단지번호붙이기.md)
-- [촌수 계산](BAEKJOON/silver/220630_촌수계산.md)
-- [맥주 마시면서 걸어가기](BAEKJOON/silver/220707_맥주마시면서걸어가기.md)
+- [DFS와 BFS : DFS/BFS](BAEKJOON/silver/220629_DFS와BFS.md)
+- [미로탐색 : DFS/BFS](BAEKJOON/silver/220629_미로탐색.md)
+- [바이러스 : DFS/BFS](BAEKJOON/silver/220629_바이러스.md)
+- [단지번호 붙이기 : DFS/BFS](BAEKJOON/silver/220630_단지번호붙이기.md)
+- [촌수 계산 : DFS/BFS](BAEKJOON/silver/220630_촌수계산.md)
+- [맥주 마시면서 걸어가기 : DFS/BFS](BAEKJOON/silver/220707_맥주마시면서걸어가기.md)
+- [신나는 함수 실행 : 동적 계획법](BAEKJOON/silver/220708_신나는함수실행.md)
+- [파도반 수열: 동적 계획법](BAEKJOON/silver/220708_파도반수열.md)
 
 ### 🥇
 
 - [틱택토](BAEKJOON/gold/220414_틱택토.md)
 - [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
-- [로봇청소기](BAEKJOON/gold/220704_로봇청소기.md)
+- [로봇청소기 : DFS/BFS](BAEKJOON/gold/220704_로봇청소기.md)
 
 ## 프로그래머스
 
