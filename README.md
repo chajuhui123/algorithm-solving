@@ -20,6 +20,8 @@
 
 - [벌집](BAEKJOON/bronze/220413_벌집.md)
 - [피보나치 : 동적 계획법](BAEKJOON/bronze/220704_피보나치.md)
+- [오븐시계](BAEKJOON/bronze/220708_오븐시계.md)
+- [주사위 세 개](BAEKJOON/bronze/220708_주사위세개.md)
 
 ### 🥈
 
@@ -32,6 +34,7 @@
 - [맥주 마시면서 걸어가기 : DFS/BFS](BAEKJOON/silver/220707_맥주마시면서걸어가기.md)
 - [신나는 함수 실행 : 동적 계획법](BAEKJOON/silver/220708_신나는함수실행.md)
 - [파도반 수열: 동적 계획법](BAEKJOON/silver/220708_파도반수열.md)
+- [연속합 : 동적 계획법](BAEKJOON/silver/220711_연속합.md)
 
 ### 🥇
 
