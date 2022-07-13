@@ -35,6 +35,8 @@
 - [신나는 함수 실행 : 동적 계획법](BAEKJOON/silver/220708_신나는함수실행.md)
 - [파도반 수열: 동적 계획법](BAEKJOON/silver/220708_파도반수열.md)
 - [연속합 : 동적 계획법](BAEKJOON/silver/220711_연속합.md)
+- [정수 삼각형 : 동적 계획법](BAEKJOON/silver/220713_정수삼각형.md)
+- [RGB 거리 : 동적 계획법](BAEKJOON/silver/220713_RGB거리.md)
 
 ### 🥇
 
