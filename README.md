@@ -37,7 +37,9 @@
 - [연속합 : 동적 계획법](BAEKJOON/silver/220711_연속합.md)
 - [정수 삼각형 : 동적 계획법](BAEKJOON/silver/220713_정수삼각형.md)
 - [RGB 거리 : 동적 계획법](BAEKJOON/silver/220713_RGB거리.md)
+- [1로 만들기 : 동적 계획법](BAEKJOON/silver/220715_1로만들기.md)
 - [계단 오르기 : 동적 계획법](BAEKJOON/silver/220715_계단오르기.md)
+- [포도주 시식 : 동적 계획법](BAEKJOON/silver/220716_포도주시식.md)
 
 ### 🥇
 
