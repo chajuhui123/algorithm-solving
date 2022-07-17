@@ -40,12 +40,14 @@
 - [1로 만들기 : 동적 계획법](BAEKJOON/silver/220715_1로만들기.md)
 - [계단 오르기 : 동적 계획법](BAEKJOON/silver/220715_계단오르기.md)
 - [포도주 시식 : 동적 계획법](BAEKJOON/silver/220716_포도주시식.md)
+- [N과 M (1) : 백트래킹](BAEKJOON/silver/220717_N과M1.md)
 
 ### 🥇
 
 - [틱택토](BAEKJOON/gold/220414_틱택토.md)
 - [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
 - [로봇청소기 : DFS/BFS](BAEKJOON/gold/220704_로봇청소기.md)
+- [평범한 배낭 : 동적계획법](BAEKJOON/gold/220717_평범한배낭.md)
 
 ## 프로그래머스
 
