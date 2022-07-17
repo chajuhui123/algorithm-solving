@@ -22,6 +22,7 @@
 - [피보나치 : 동적 계획법](BAEKJOON/bronze/220704_피보나치.md)
 - [오븐시계](BAEKJOON/bronze/220708_오븐시계.md)
 - [주사위 세 개](BAEKJOON/bronze/220708_주사위세개.md)
+- [블랙잭 : 브루트포스](BAEKJOON/bronze/220717_블랙잭.md)
 
 ### 🥈
 
