@@ -46,6 +46,10 @@
 - [소트인사이드 : 정렬](BAEKJOON/silver/220718_소트인사이드.md)
 - [영화감독 숌 : 브루트포스](BAEKJOON/silver/220718_영화감독숌.md)
 - [듣보잡 : 정렬](BAEKJOON/silver/220720_듣보잡.md)
+- [잃어버린 괄호 : 그리디 알고리즘](BAEKJOON/silver/220727_잃어버린괄호.md)
+- [주유소 : 그리디 알고리즘](BAEKJOON/silver/220727_주유소.md)
+- [회의실배정 : 그리디 알고리즘](BAEKJOON/silver/220727_회의실배정.md)
+- [ATM : 그리디 알고리즘](BAEKJOON/silver/220727_ATM.md)
 
 ### 🥇
 
