@@ -50,6 +50,7 @@
 - [주유소 : 그리디 알고리즘](BAEKJOON/silver/220727_주유소.md)
 - [회의실배정 : 그리디 알고리즘](BAEKJOON/silver/220727_회의실배정.md)
 - [ATM : 그리디 알고리즘](BAEKJOON/silver/220727_ATM.md)
+- [색종이 만들기 : 분할정복](BAEKJOON/silver/220730_색종이만들기.md)
 
 ### 🥇
 
