@@ -51,6 +51,9 @@
 - [회의실배정 : 그리디 알고리즘](BAEKJOON/silver/220727_회의실배정.md)
 - [ATM : 그리디 알고리즘](BAEKJOON/silver/220727_ATM.md)
 - [색종이 만들기 : 분할정복](BAEKJOON/silver/220730_색종이만들기.md)
+- [곱셈 : 분할정복](BAEKJOON/silver/220802_곱셈.md)
+- [스택 : 자료구조 스택](BAEKJOON/silver/220802_스택.md)
+- [제로 : 자료구조 스택](BAEKJOON/silver/220802_제로.md)
 
 ### 🥇
 
@@ -58,6 +61,7 @@
 - [커플 만들기](BAEKJOON/gold/220415_커플만들기.js)
 - [로봇청소기 : DFS/BFS](BAEKJOON/gold/220704_로봇청소기.md)
 - [평범한 배낭 : 동적계획법](BAEKJOON/gold/220717_평범한배낭.md)
+- [오큰수 : 자료구조 스택](BAEKJOON/gold/220802_오큰수.md)
 
 ## 프로그래머스
 
