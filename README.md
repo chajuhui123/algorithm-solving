@@ -54,6 +54,9 @@
 - [곱셈 : 분할정복](BAEKJOON/silver/220802_곱셈.md)
 - [스택 : 자료구조 스택](BAEKJOON/silver/220802_스택.md)
 - [제로 : 자료구조 스택](BAEKJOON/silver/220802_제로.md)
+- [괄호 : 자료구조 스택](BAEKJOON/silver/220803_괄호.md)
+- [균형잡힌 세상 : 자료구조 스택](BAEKJOON/silver/220803_균형잡힌세상.md)
+- [나이순정렬: 정렬](BAEKJOON/silver/220803_나이순정렬.md)
 
 ### 🥇
 
