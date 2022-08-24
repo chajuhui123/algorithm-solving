@@ -72,6 +72,10 @@
 - [로봇청소기 : DFS/BFS](BAEKJOON/gold/220704_로봇청소기.md)
 - [평범한 배낭 : 동적계획법](BAEKJOON/gold/220717_평범한배낭.md)
 - [오큰수 : 자료구조 스택](BAEKJOON/gold/220802_오큰수.md)
+- [숨바꼭질2 : BFS](BAEKJOON/gold/220824_숨바꼭질2.md)
+- [숨바꼭질3 : BFS](BAEKJOON/gold/220824_숨바꼭질3.md)
+- [숨바꼭질4 : BFS](BAEKJOON/gold/220824_숨바꼭질4.md)
+- [탑 : 스택](BAEKJOON/gold/220824_탑.md)
 
 ## 프로그래머스
 
