@@ -76,6 +76,10 @@
 - [숨바꼭질3 : BFS](BAEKJOON/gold/220824_숨바꼭질3.md)
 - [숨바꼭질4 : BFS](BAEKJOON/gold/220824_숨바꼭질4.md)
 - [탑 : 스택](BAEKJOON/gold/220824_탑.md)
+- [이모티콘 : BFS](BAEKJOON/gold/220825_이모티콘.md)
+- [빙산 : DFS](BAEKJOON/gold/220826_빙산.md)
+- [스타트링크 : BFS](BAEKJOON/gold/220826_스타트링크.md)
+- [mooTube : BFS](BAEKJOON/gold/220826_mooTube.md)
 
 ## 프로그래머스
 
