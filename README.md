@@ -80,6 +80,7 @@
 - [빙산 : DFS](BAEKJOON/gold/220826_빙산.md)
 - [스타트링크 : BFS](BAEKJOON/gold/220826_스타트링크.md)
 - [mooTube : BFS](BAEKJOON/gold/220826_mooTube.md)
+- [네트워크 연결 : 그래프](BAEKJOON/gold/220830_네트워크연결.md)
 
 ## 프로그래머스
 
