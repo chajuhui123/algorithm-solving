@@ -81,6 +81,8 @@
 - [스타트링크 : BFS](BAEKJOON/gold/220826_스타트링크.md)
 - [mooTube : BFS](BAEKJOON/gold/220826_mooTube.md)
 - [네트워크 연결 : 그래프](BAEKJOON/gold/220830_네트워크연결.md)
+- [전구와 스위치 : 그리디](BAEKJOON/gold/220901_전구와스위치.md)
+- [탈출 : BFS](BAEKJOON/gold/220901_탈출.md)
 
 ## 프로그래머스
 
