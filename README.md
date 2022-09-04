@@ -81,12 +81,14 @@
 - [스타트링크 : BFS](BAEKJOON/gold/220826_스타트링크.md)
 - [mooTube : BFS](BAEKJOON/gold/220826_mooTube.md)
 - [네트워크 연결 : 그래프](BAEKJOON/gold/220830_네트워크연결.md)
+- [타임머신 : 벨만포드](BAEKJOON/gold/220830_타임머신.md)
 - [전구와 스위치 : 그리디](BAEKJOON/gold/220901_전구와스위치.md)
 - [탈출 : BFS](BAEKJOON/gold/220901_탈출.md)
 - [가운데를 말해요 : 힙](BAEKJOON/gold/220902_가운데를말해요.md)
 - [색상환 : DP](BAEKJOON/gold/220902_색상환.md)
 - [운동 : 플로이드 와샬](BAEKJOON/gold/220902_운동.md)
 - [플로이드 : 플로이드 와샬](BAEKJOON/gold/220902_플로이드.md)
+- [puyo puyo : BFS](BAEKJOON/gold/220904_puyoPuyo.md)
 
 ## 프로그래머스
 
