@@ -67,7 +67,9 @@
 - [보물 : 그리디](BAEKJOON/silver/220909_보물.md)
 - [숨바꼭질 : BFS](BAEKJOON/silver/220909_숨바꼭질.md)
 - [회전초밥 : 슬라이딩윈도우/투포인터](BAEKJOON/silver/220910_회전초밥.md)
+- [1, 2, 3 더하기 4 : 다이나믹](BAEKJOON/silver/220911_1,2,3더하기4.md)
 - [가희와 키워드 : 해시를 사용한 집합과 맵](BAEKJOON/silver/220911_가희와키워드.md)
+- [볼모으기 : 그리디](BAEKJOON/silver/220911_볼모으기.md)
 
 ### 🥇
 
