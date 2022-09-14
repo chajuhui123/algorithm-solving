@@ -70,6 +70,9 @@
 - [1, 2, 3 더하기 4 : 다이나믹](BAEKJOON/silver/220911_1,2,3더하기4.md)
 - [가희와 키워드 : 해시를 사용한 집합과 맵](BAEKJOON/silver/220911_가희와키워드.md)
 - [볼모으기 : 그리디](BAEKJOON/silver/220911_볼모으기.md)
+- [if문 좀 대신 써줘 : 이분탐색](BAEKJOON/silver/220913_if문좀대신써줘.md)
+- [등수 구하기 : 구현](BAEKJOON/silver/220914_등수구하기.md)
+- [타노스 : 그리디](BAEKJOON/silver/220914_타노스.md)
 
 ### 🥇
 
