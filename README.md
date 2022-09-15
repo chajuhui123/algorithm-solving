@@ -23,6 +23,7 @@
 - [오븐시계](BAEKJOON/bronze/220708_오븐시계.md)
 - [주사위 세 개](BAEKJOON/bronze/220708_주사위세개.md)
 - [블랙잭 : 브루트포스](BAEKJOON/bronze/220717_블랙잭.md)
+- [ZOAC4](BAEKJOON/bronze/220915_ZOAC4.md)
 
 ### 🥈
 
@@ -73,6 +74,7 @@
 - [if문 좀 대신 써줘 : 이분탐색](BAEKJOON/silver/220913_if문좀대신써줘.md)
 - [등수 구하기 : 구현](BAEKJOON/silver/220914_등수구하기.md)
 - [타노스 : 그리디](BAEKJOON/silver/220914_타노스.md)
+- [주식 : 그리디](BAEKJOON/silver/220915_주식.md)
 
 ### 🥇
 
