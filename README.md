@@ -75,6 +75,7 @@
 - [등수 구하기 : 구현](BAEKJOON/silver/220914_등수구하기.md)
 - [타노스 : 그리디](BAEKJOON/silver/220914_타노스.md)
 - [주식 : 그리디](BAEKJOON/silver/220915_주식.md)
+- [지름길 : 다이나믹, 그래프](BAEKJOON/silver/220916_지름길.md)
 
 ### 🥇
 
