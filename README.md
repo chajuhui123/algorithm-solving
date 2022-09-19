@@ -76,6 +76,9 @@
 - [타노스 : 그리디](BAEKJOON/silver/220914_타노스.md)
 - [주식 : 그리디](BAEKJOON/silver/220915_주식.md)
 - [지름길 : 다이나믹, 그래프](BAEKJOON/silver/220916_지름길.md)
+- [그림 : DFS/BFS](BAEKJOON/silver/220919_그림.md)
+- [영역 구하기 : DFS/BFS](BAEKJOON/silver/220919_영역구하기.md)
+- [유기농 배추 : DFS/BFS](BAEKJOON/silver/220919_유기농배추.md)
 
 ### 🥇
 
