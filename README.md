@@ -79,6 +79,7 @@
 - [그림 : DFS/BFS](BAEKJOON/silver/220919_그림.md)
 - [영역 구하기 : DFS/BFS](BAEKJOON/silver/220919_영역구하기.md)
 - [유기농 배추 : DFS/BFS](BAEKJOON/silver/220919_유기농배추.md)
+- [안전영역 : DFS/BFS](BAEKJOON/silver/220920_안전영역.md)
 
 ### 🥇
 
