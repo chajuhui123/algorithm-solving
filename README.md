@@ -105,6 +105,7 @@
 - [운동 : 플로이드 와샬](BAEKJOON/gold/220902_운동.md)
 - [플로이드 : 플로이드 와샬](BAEKJOON/gold/220902_플로이드.md)
 - [puyo puyo : BFS](BAEKJOON/gold/220904_puyoPuyo.md)
+- [적록색약 : DFS/BFS](BAEKJOON/gold/220922_적록색약.md)
 
 ## 프로그래머스
 
