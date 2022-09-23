@@ -27,6 +27,6 @@
 
 ## Solved.ac
 
-[![Solved.ac](http://mazassumnida.wtf/api/v2/generate_badge?boj=chajuhui123)](https://solved.ac/chajuhui123)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=chajuhui123)](https://solved.ac/chajuhui123/)
 
 - 루비가 되는 그 날까지...
