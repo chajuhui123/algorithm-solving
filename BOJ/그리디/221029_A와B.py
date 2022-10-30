@@ -6,41 +6,26 @@ input = sys.stdin.readline
 s = list(input().strip())
 t = list(input().strip())
 
-while len(s) != len(t):
-    last = t.pop()
+answer = False
 
+while t:
     # A 라면 그냥 제거
-    if last == "A":
-        continue
+    if t[-1] == "A":
+        t.pop()
 
     # B 라면 뒤집고 제거
-    elif last == "B":
-        t = list(map(lambda x: 'A' if x == "B" else 'B', t))
+    elif t[-1] == "B":
+        t.pop()
+        t.reverse()
 
-    if len(t) == len(s):
+    if t == s:
+        answer = True
         break
 
-print(1 if s == t else 0)
+print(int(answer))
 
 
-    
-
-# 문자열 뒤에 A 추가
-# 문자열 뒤집고 B 추가
-
-
-# B 라면 뒤집고 제거
-
-
-# 길이 같으면 -> 뒤집어서 비교 같지 않다면 0 리턴
-
-# A B B A (A 그냥 제거)
-# A B B B (B 제거 후 뒤집기)
-# B A A (A 그냥 제거)
-# B A (A 그냥 제거)
-# B (일치~!)
-
-# A B B (B 제거 후 뒤집기)
-# B A (일치하지 않아용)
-
-
+# IDEA
+# 문제의 조건 1. 문자열의 뒤에 A를 추가한다. 2. 문자열을 뒤집고 뒤에 B를 추가한다. 를 파악하면 해결 가능한 그리디 문제
+# 처음에 해결하지 못했던 이유는 문자열을 뒤집는다는 문장을 A<->B 교체하는 것으로 이해해서 해결하지 못했다.
+# 문제의 요구사항을 정확히 파악하자!
