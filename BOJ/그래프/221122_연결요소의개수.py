@@ -1,6 +1,8 @@
 # 11724
 import sys
 input = sys.stdin.readline
+# python은 재귀제한이 걸려있기 때문에 재귀 허용치가 넘어가면 런타임에러를 일으킨다. 때문에 sys.setrecursionlimit(10000) 셋팅
+sys.setrecursionlimit(10000)
 
 def dfs(start):
     visited[start] = True # 해당 노드 방문체크
