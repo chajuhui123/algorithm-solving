@@ -27,8 +27,3 @@ def get_minimum_cost(arr):
         return sum(arr[0:len(arr) -1])
     else :
         return 0
-
-print(row_cost_non_neighboring('abbcde', [0,1,2,1,1,1]))
-print(row_cost_non_neighboring('aabbcc', [0,1,0,1,0,1]))
-print(row_cost_non_neighboring('cbbbbde', [0,1,2,3,4,5,6]))
-
