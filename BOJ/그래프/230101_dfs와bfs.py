@@ -8,7 +8,7 @@ from collections import deque
 n, m, v = map(int, input().split()) # 정점 개수 n, 간선 개수 m, 탐색 시작 정점 v
 
 # 1. 그래프 초기화를 위한 2중배열 선언, dfs, bfs 정점 방문 여부를 위한 리스트 선언
-graph = [[0] * (n + 1) for _ in range(n + 1)] 
+graph = [[-1] * (n + 1) for _ in range(n + 1)] 
 dfs_visit_list = [0] * (n + 1)
 bfs_visit_list = [0] * (n + 1)
 
@@ -53,3 +53,4 @@ bfs(v)
 # 1 4
 # 2 4
 # 3 4
+
