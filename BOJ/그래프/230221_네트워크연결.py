@@ -1,44 +1,54 @@
 # 1922
-# 크루스칼
+# 크루스칼 => union find 함수를 통해 해결할 수 있다!
 
 import sys
 input = sys.stdin.readline
 
-INF = float('inf')
+# 특정 원소가 속한 집합을 찾기
+def find(parent, x):
+    if parent[x] == x:
+        return x
+    parent[x] = find(parent, parent[x])
+    return parent[x]
 
-node = int(input())
-edge = int(input())
+# 두 원소가 속한 집합을 합치기 (간선 연결한다고 생각!)
+def union(parent, a, b):
+    rootA = find(parent, a)
+    rootB = find(parent, b)
 
-graph = [[INF for _ in range(node + 1)] for _ in range(node + 1)]
-visited = [ False for _ in range(node + 1)]
-distance = [ INF for _ in range(node + 1)]
+    if rootA < rootB:
+        parent[rootB] = rootA
+    else:
+        parent[rootA] = rootB
 
-# 연결관계 초기화
+
+node = int(input()) # 노드 수 (컴퓨터 수)
+edge = int(input()) # 간선 수 (컴퓨터 연결 짓는 수)
+
+answer = 0
+parent = {}
+edges = []
+
+for i in range(1, node+1):
+    parent[i] = i
+
 for _ in range(edge):
-    computer_l, computer_r, value = map(int, input().split())
-    graph[computer_l][computer_r] = value;
-    graph[computer_r][computer_l] = value;
+    a, b, value = map(int, input().split())
+    edges.append((value, a, b )) # 비용에 따른 오름차순 정렬을 위해 value를 0번째 값으로
 
+edges.sort()
 
-def get_min_node():
-    min_num = INF
-    v = 0
-    for idx in range(1, node + 1):
-        if visited[idx] == False and distance[idx] < min_num:
-            minNum = distance[idx];
-            v = idx
-    return v
+for edge in edges:
+    value, a, b = edge
+    if find(parent,a) != find(parent,b):
+        union(parent,a,b)
+        answer += value
 
-def get_prim(start):
-  distance[start] = 0;
+print(answer)
 
-  for i in range(1, node + 1):
-    min_node = get_min_node()
-    visited[min_node] = True
-    for j in range(1, node + 1):
-        if graph[min_node][j] != INF and visited[j] == False and (graph[min_node][j] < distance[j]):
-            distance[j] = graph[min_node][j]
-
-get_prim(1)
-
-print(distance)
+# IDEA
+# 1. 간선 데이터를 비용에 따라 오름차순으로 정렬한다.
+# 2. 간선을 하나씩 확인하며 현재의 간선이 사이클을 발생시키는지 확인한다.
+# ㄴ 사이클이 발생하지 않는 경우, 최소 신장 트리에 포함시킨다.
+# ㄴ 사이클이 발생하는 경우, 최소 신장 트리에 포함시키지 않는다.
+# 3. 모든 간선에 대하여 2번의 과정을 반복한다.
