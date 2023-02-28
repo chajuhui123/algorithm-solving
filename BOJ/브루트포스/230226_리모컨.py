@@ -9,36 +9,22 @@ able_buttons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 for button in buttons:
     able_buttons.remove(button)
 
+# +/- 버튼만 눌러서 움직일 경우 (최대)
+cnt = abs(100 - n)
 
-# 5457
-# 3 
-# 6 7 8 
+for channel in range(1000001):
+    for i in str(channel):
+        # 고장난 버튼이 있으면
+        # 입력을 하지못하므로 통과
+        if i not in able_buttons:
+            break
+        # 버튼이 고장나지 않았다면
+        # 채널 움직인 후 +/-를 통해 움직이는게 더 최소이므로 갱신
+        else:
+            cnt = min(cnt, len(str(channel)) + abs(channel - n))
 
-# 우리가 사용할 수 있는 버튼 1, 2, 3, 4, 5, 9
+print(cnt)
 
-# 사용할 수 있는 버튼의 수 >= n의 자리수
-# 1, 2, 3, 4, 5, 9 라는 숫자로 만들 수 있는 4자리 수
-
-# items = [1,2,3,4]
-
-able_len = list(permutations(able_buttons, len(str(n))))
-abel_small_len = list(permutations(able_buttons, len(str(n)) - 1 ))
-able_big_len = list(permutations(able_buttons, len(str(n)) + 1 ))
-
-# 사용 가능한 버튼들로 만들 수 있는 모든 번호 (n개의 자리 동일)
-able = []
-for item in able_len:
-    able.append(''.join(map(str, item)))
-
-diff = []
-for able_num in able:
-    print(able_num)
-    diff.append(abs(int(n) - int(able_num)))
-    
-print(diff)
-
-
-
-
-    
-    
+# IDEA
+# 0 ~ 1000000 까지 for문을 반복하며 해당 숫자가 모두 누를수 있는 버튼들로 이루어져 있다면,
+# 해당 숫자로 가능한 최소횟수 VS (입력으로 받은 숫자 n - 100) 의 절대값과 비교하여 작은 숫자 출력
