@@ -1,172 +1,130 @@
-/* 위치 기반 업데이트 **/
-const updateLocation = (graph, r, c, value, mergeGroup) => {
-  if (checkIsInMergeGroup(r, c, mergeGroup)) {
-    mergeGroup.map((group) => {
-      if (group.includes(`${r} ${c}`)) {
-        group.map((item) => {
-          const [targetR, targetC] = item.split(" ");
-          graph[targetR][targetC] = value;
-        });
-      }
-    });
-  } else {
-    graph[r][c] = value;
-  }
-};
-
-/* 값 기반 업데이트 **/
-const updateValue = (graph, fromValue, toValue) => {
-  graph.map((line, r) => {
-    line.map((item, c) => {
-      if (item === fromValue) {
-        graph[r][c] = toValue;
-      }
-    });
-  });
-};
-
-/* 칸 합치기 **/
-const merge = (graph, fromR, fromC, toR, toC, mergeGroup) => {
-  if (fromR === toR && fromC === toC) return; // 같은 경우 아무 일도 안일어남
-
-  const value = graph[fromR][fromC];
-  graph[toR][toC] = value;
-
-  const isFromMerge = checkIsInMergeGroup(fromR, fromC, mergeGroup);
-  const isToMerge = checkIsInMergeGroup(toR, toC, mergeGroup);
-
-  if (!isFromMerge && !isToMerge) {
-    // 1. 둘다 머지가 되어 있지 않은 상태
-    mergeGroup.push([`${fromR} ${fromC}`, `${toR} ${toC}`]);
-  } else if (isFromMerge && isToMerge) {
-    // 2. 둘다 머지가 되어 있는 상태인 경우 (r1, c1 머지 그룹과 r2, c2 머지 그룹을 합침)
-    // r2, c2 가 포함된 그룹을
-    // r1, c1 이 포함되어있는 그룹으로 옮긴 후
-    // 해당 그룹에 모든 값을 value 로 바꿔줘야 함
-
-    // r2, c2 저장한 후, 제거 로직
-    let backupRC = [];
-    mergeGroup.map((group, idx) => {
-      if (group.includes(`${toR} ${toC}`)) {
-        backupRC = group;
-        mergeGroup.splice(idx, 1);
-      }
-    });
-
-    // 해당 그룹에 모든 값을 value 로 바꿈
-    backupRC.map((item) => {
-      const [itemR, itemC] = item.split(" ");
-      graph[itemR][itemC] = value;
-    });
-
-    // 머지
-    mergeGroup.map((group, idx) => {
-      if (group.includes(`${fromR} ${fromC}`)) {
-        group.push(...backupRC);
-      }
-    });
-  } else if (isFromMerge) {
-    // 3. r1, c1가 머지된 상태인 경우  (r2, c2 를 기존 그룹에 추가)
-    mergeGroup.map((group) => {
-      if (group.includes(`${fromR} ${fromC}`)) {
-        group.push(`${toR} ${toC}`);
-        // console.log(graph)
-        return;
-      }
-    });
-  } else if (isToMerge) {
-    // 4. r2, c2가 머지된 상태인 경우  (r1, c1 을 기존 그룹에 추가)
-    mergeGroup.map((group) => {
-      if (group.includes(`${toR} ${toC}`)) {
-        group.push(`${fromR} ${fromC}`);
-        return;
-      }
-    });
-  }
-};
-
-const unmerge = (graph, r, c, mergeGroup) => {
-  // 머지된 칸인지 확인하기
-  // 머지된 그룹 찾기. r,c 제외하고 grpah null 값으로 변경
-  // mergeGroup 에서 해당 그룹 제거
-  if (!checkIsInMergeGroup(r, c, mergeGroup)) return;
-  mergeGroup.map((group, idx) => {
-    if (group.includes(`${r} ${c}`)) {
-      group.map((item) => {
-        if (item != `${r} ${c}`) {
-          const [targetR, targetC] = item.split(" ");
-          graph[targetR][targetC] = null;
-        }
-      });
-      mergeGroup.splice(idx, 1);
-    }
-  });
-};
-
-/* 머지된 칸인지 확인하기 **/
-const checkIsInMergeGroup = (r, c, mergeGroup) => {
-  let isMerge = false;
-  mergeGroup.map((group) => {
-    if (group.includes(`${r} ${c}`)) {
-      isMerge = true;
-      return;
-    }
-  });
-  return isMerge;
-};
-
 function solution(commands) {
-  let graph = Array.from(Array(51), () => Array(51).fill(null));
-  let mergeGroup = [];
-
   const result = [];
+
+  let graph = Array.from(Array(51), () => Array(51).fill(null));
+  let mergeParent = Array(51)
+    .fill()
+    .map((_, i) =>
+      Array(51)
+        .fill()
+        .map((_, j) => [i, j])
+    );
 
   commands.forEach((item) => {
     const command = item.split(" ");
-    const [commandType, ...param] = command;
+    const [commandType, ...valueParam] = command;
 
     switch (commandType) {
       case "UPDATE":
-        const isUpdateValue = command.length === 3; // 해당하는 값을 변경시키는 update 문인지 검사
-
-        if (isUpdateValue) {
-          // 값 기준 업데이트
-          const [fromValue, toValue] = param;
-          updateValue(graph, fromValue, toValue);
-        } else {
-          // r,c 위치 기반 업데이트
-          const [updateR, updateC, value] = param;
-          updateLocation(graph, updateR, updateC, value, mergeGroup);
-        }
+        const isUpdateValue = valueParam.length === 2; // 값 기준 업데이트인 경우
+        if (isUpdateValue) updateValue(valueParam);
+        else updateLocation(valueParam);
         break;
 
       case "MERGE":
-        // 머지의 참조 칸을 어떻게 구현할지 고민 중
-        // 머지 로직에 영향을 받는 값들
-        // 1. merge
-        // 2. 위치 기반 UPDATE
-        // 3. unmerge
-        const [fromR, fromC, toR, toC] = param;
-        merge(graph, fromR, fromC, toR, toC, mergeGroup);
-
-        // console.log(mergeGroup)
-        // console.log(graph)
-
+        merge(valueParam);
         break;
 
       case "UNMERGE":
-        const [unmergeR, unmergeC] = param;
-        unmerge(graph, unmergeR, unmergeC, mergeGroup);
-        // console.log(mergeGroup)
-        // console.log(graph)
+        unmerge(valueParam);
         break;
 
       case "PRINT":
-        const [printR, printC] = param;
-        result.push(graph[printR][printC] ?? "EMPTY");
+        const printValue = print(valueParam);
+        result.push(printValue);
         break;
     }
   });
 
   return result;
+
+  function updateValue(valueParam) {
+    const [value1, value2] = valueParam;
+
+    graph.map((line, rIdx) => {
+      line.map((itemValue, cIdx) => {
+        if (itemValue === value1) graph[rIdx][cIdx] = value2;
+      });
+    });
+  }
+
+  function updateLocation(valueParam) {
+    const [r, c, value] = valueParam;
+    const target = find([r, c]);
+
+    graph.map((line, rIdx) => {
+      line.map((_, cIdx) => {
+        if (mergeParent[rIdx][cIdx].toString() === target.toString())
+          graph[r][c] = value;
+      });
+    });
+  }
+
+  function merge(valueParam) {
+    const [r1, c1, r2, c2] = valueParam;
+    if (r1 === r2 && c1 === c2) return; // 1. 선택한 두 위치의 셀이 같은 셀일 경우 무시
+
+    // value 에 대한 조건
+    // 1. 두 셀 중 한 셀이 값을 가지고 있을 경우, 병합된 셀은 해당 값을 가지게 됨
+    // 2. 두 셀 모두 값을 가지고 있을 경우 병합된 셀은 (r1, c1) 위치의 셀 값을 가지게 됨
+    const value = graph[r1][c1] ?? graph[r2][c2];
+
+    const mergeParent1 = find([r1, c1]);
+    const mergeParent2 = find([r2, c2]);
+
+    if (mergeParent1.toString() !== mergeParent2.toString())
+      mergeParent[r2][c2] = mergeParent1; // r1, c1 이 부모가 되도록 병합
+
+    graph.map((line, rIdx) => {
+      line.map((itemValue, cIdx) => {
+        // 이전에 (r2, c2) 가 부모로 연결되어 있던 값들을 r1, c1 의 부모와 연결되게 해주기
+        if (mergeParent[rIdx][cIdx].toString() === mergeParent2.toString()) {
+          mergeParent[rIdx][cIdx] = mergeParent1;
+        }
+        // (r1, c1)가 부모로 연결되어 있는 값들 === 머지 된 값을 머지 이후 값으로 변경해주기
+        if (mergeParent[rIdx][cIdx].toString() === mergeParent1.toString()) {
+          graph[rIdx][cIdx] = value;
+        }
+      });
+    });
+  }
+
+  function unmerge(valueParam) {
+    const [r, c] = valueParam;
+    const value = graph[r][c];
+    const target = find([r, c]);
+
+    graph.map((line, rIdx) => {
+      line.map((_, cIdx) => {
+        if (mergeParent[rIdx][cIdx].toString() === target.toString()) {
+          graph[rIdx][cIdx] = null;
+          mergeParent[rIdx][cIdx] = [rIdx, cIdx];
+        }
+      });
+    });
+
+    graph[r][c] = value;
+  }
+
+  function print(valueParam) {
+    const [r, c] = valueParam;
+    return graph[r][c] ?? "EMPTY";
+  }
+
+  function find(location) {
+    const [r, c] = location;
+    // 1. merge 그룹 중 가장 상위 부모를 찾은 경우 return
+    if ([r, c].toString() === mergeParent[r][c].toString()) {
+      return [Number(r), Number(c)];
+    }
+    // 2. 재귀적으로 merge 그룹에서의 부모 r, c 를 찾음
+    mergeParent[r][c] = find(mergeParent[r][c]);
+    return mergeParent[r][c];
+  }
 }
+
+// IDEA
+// 해당 구현 문제에 포인트는 Merge / UnMerge 로직이라고 생각했음
+// Merge 로직에 의해 영향을 받는 값들이 값들이 다양한데 (위치 기반 Update, unmerge, merge ...)
+// merge 된 칸들을 저장하고, 활용할 방안에 대해 고민이 필요함!
+// 그리고 각 로직에서 참고해야하는 예외 케이스들을 코드로 잘 구현할 수 있어야 함.
