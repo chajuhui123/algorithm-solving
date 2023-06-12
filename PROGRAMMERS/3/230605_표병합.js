@@ -1,43 +1,4 @@
 function solution(commands) {
-  const result = [];
-
-  let graph = Array.from(Array(51), () => Array(51).fill(null));
-  let mergeParent = Array(51)
-    .fill()
-    .map((_, i) =>
-      Array(51)
-        .fill()
-        .map((_, j) => [i, j])
-    );
-
-  commands.forEach((item) => {
-    const command = item.split(" ");
-    const [commandType, ...valueParam] = command;
-
-    switch (commandType) {
-      case "UPDATE":
-        const isUpdateValue = valueParam.length === 2; // 값 기준 업데이트인 경우
-        if (isUpdateValue) updateValue(valueParam);
-        else updateLocation(valueParam);
-        break;
-
-      case "MERGE":
-        merge(valueParam);
-        break;
-
-      case "UNMERGE":
-        unmerge(valueParam);
-        break;
-
-      case "PRINT":
-        const printValue = print(valueParam);
-        result.push(printValue);
-        break;
-    }
-  });
-
-  return result;
-
   function updateValue(valueParam) {
     const [value1, value2] = valueParam;
 
@@ -55,7 +16,7 @@ function solution(commands) {
     graph.map((line, rIdx) => {
       line.map((_, cIdx) => {
         if (mergeParent[rIdx][cIdx].toString() === target.toString())
-          graph[r][c] = value;
+          graph[rIdx][cIdx] = value;
       });
     });
   }
@@ -121,6 +82,45 @@ function solution(commands) {
     mergeParent[r][c] = find(mergeParent[r][c]);
     return mergeParent[r][c];
   }
+
+  const result = [];
+
+  let graph = Array.from(Array(51), () => Array(51).fill(null));
+  let mergeParent = Array(51)
+    .fill()
+    .map((_, i) =>
+      Array(51)
+        .fill()
+        .map((_, j) => [i, j])
+    );
+
+  commands.forEach((item) => {
+    const command = item.split(" ");
+    const [commandType, ...valueParam] = command;
+
+    switch (commandType) {
+      case "UPDATE":
+        const isUpdateValue = valueParam.length === 2; // 값 기준 업데이트인 경우
+        if (isUpdateValue) updateValue(valueParam);
+        else updateLocation(valueParam);
+        break;
+
+      case "MERGE":
+        merge(valueParam);
+        break;
+
+      case "UNMERGE":
+        unmerge(valueParam);
+        break;
+
+      case "PRINT":
+        const printValue = print(valueParam);
+        result.push(printValue);
+        break;
+    }
+  });
+
+  return result;
 }
 
 // IDEA
