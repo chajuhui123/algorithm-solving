@@ -1,7 +1,7 @@
 | 문제                                                                         | 목표 풀이 시간 | 난이도 | 상태     | 풀이                                                               |
 | ---------------------------------------------------------------------------- | -------------- | ------ | -------- | ------------------------------------------------------------------ |
 | https://leetcode.com/problems/maximum-subarray                               | 20 mins        | Medium | `REPEAT` | [Link](./230717_Maximum-Subarray.js)                               |
-| https://leetcode.com/problems/insert-interval                                | 25 mins        | Medium |          |                                                                    |
+| https://leetcode.com/problems/insert-interval                                | 25 mins        | Medium | `REPEAT` | [Link](./230719_Insert-Interval.js)                                |
 | https://leetcode.com/problems/01-matrix                                      | 30 mins        | Medium | `REPEAT` | [Link](./230717_01-Matrix.js)                                      |
 | https://leetcode.com/problems/k-closest-points-to-origin                     | 30 mins        | Medium | `SOLVE`  | [Link](./230719_K-Closest-Points-to-Origin.js)                     |
 | https://leetcode.com/problems/longest-substring-without-repeating-characters | 30 mins        | Medium | `SOLVE`  | [Link](./230717_Longest-Substring-Without-Repeating-Characters.js) |
