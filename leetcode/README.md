@@ -9,6 +9,6 @@
 | https://leetcode.com/problems/binary-tree-level-order-traversal              | 20 mins        | Medium |          |
 | https://leetcode.com/problems/evaluate-reverse-polish-notation               | 30 mins        | Medium |          |
 | https://leetcode.com/problems/course-schedule                                | 30 mins        | Medium | `REPEAT` | [Link](./230718_Course-Schedule.js)                                |
-| https://leetcode.com/problems/implement-trie-prefix-tree                     | 35 mins        | Medium |          |
+| https://leetcode.com/problems/implement-trie-prefix-tree                     | 35 mins        | Medium | `REPEAT` | [Link](./230719_Implement-Trie.js)                                 |
 | https://leetcode.com/problems/coin-change                                    | 25 mins        | Medium | `REPEAT` | [Link](./230718_Coin-Change.js)                                    |
 | https://leetcode.com/problems/product-of-array-except-self                   | 30 mins        | Medium | `REPEAT` | [Link](./230718_Product-of-Array-Except-Self.js)                   |
