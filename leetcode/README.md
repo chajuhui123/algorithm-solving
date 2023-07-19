@@ -6,7 +6,7 @@
 | https://leetcode.com/problems/k-closest-points-to-origin                     | 30 mins        | Medium |          |
 | https://leetcode.com/problems/longest-substring-without-repeating-characters | 30 mins        | Medium | `SOLVE`  | [Link](./230717_Longest-Substring-Without-Repeating-Characters.js) |
 | https://leetcode.com/problems/3sum                                           | 30 mins        | Medium | `REPEAT` | [Link](./230717_3Sum.js)                                           |
-| https://leetcode.com/problems/binary-tree-level-order-traversal              | 20 mins        | Medium |          |
+| https://leetcode.com/problems/binary-tree-level-order-traversal              | 20 mins        | Medium | `REPEAT` | [Link](./230719_Binary-Tree-Level-Order-Traversal.js)              |
 | https://leetcode.com/problems/evaluate-reverse-polish-notation               | 30 mins        | Medium | `SOLVE`  | [Link](./230719_Evaluate-Reverse-Polish-Notation.js)               |
 | https://leetcode.com/problems/course-schedule                                | 30 mins        | Medium | `REPEAT` | [Link](./230718_Course-Schedule.js)                                |
 | https://leetcode.com/problems/implement-trie-prefix-tree                     | 35 mins        | Medium | `REPEAT` | [Link](./230719_Implement-Trie.js)                                 |
