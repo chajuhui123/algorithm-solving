@@ -12,3 +12,6 @@
 | https://leetcode.com/problems/implement-trie-prefix-tree                     | 35 mins        | Medium | `REPEAT` | [Link](./230719_Implement-Trie.js)                                 |
 | https://leetcode.com/problems/coin-change                                    | 25 mins        | Medium | `REPEAT` | [Link](./230718_Coin-Change.js)                                    |
 | https://leetcode.com/problems/product-of-array-except-self                   | 30 mins        | Medium | `REPEAT` | [Link](./230718_Product-of-Array-Except-Self.js)                   |
+| https://leetcode.com/problems/two-sum                                        |                | Easy   | `SOLVE`  | [Link](./230720_Two-Sum.js)                                        |
+| https://leetcode.com/problems/reverse-integer                                |                | Medium | `SOLVE`  | [Link](./230720_Reverse-Integer.js)                                |
+| https://leetcode.com/problems/minimum-size-subarray-sum                      |                | Medium | `REPEAT` | [Link](./230720_Minimum-Size-Subarray-Sum.js)                      |
