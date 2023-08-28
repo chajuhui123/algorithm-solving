@@ -17,3 +17,5 @@
 | https://leetcode.com/problems/minimum-size-subarray-sum                      |                | Medium | `REPEAT` | [Link](./230720_Minimum-Size-Subarray-Sum.js)                      |
 | https://leetcode.com/problems/letter-combinations-of-a-phone-number          |                | Medium | `REPEAT` | [Link](./230723_Letter-Combinations-of-a-Phone-Number.js)          |
 | https://leetcode.com/problems/3sum-closest                                   |                | Medium | `REPEAT` | [Link](./230724_3Sum-Closest.js)                                   |
+| https://leetcode.com/problems/container-with-most-water                      |                | Medium | `SOLVE`  | [Link](./230827_Container-With-Most-Water.js)                      |
+| https://leetcode.com/problems/best-time-to-buy-and-sell-stock                |                | Easy   | `REPEAT` | [Link](./230828_Best-Time-to-Buy-and-Sell-Stock.js)                |
