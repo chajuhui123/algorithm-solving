@@ -23,3 +23,4 @@
 | https://leetcode.com/problems/longest-increasing-subsequence                 |                | Medium | 동적계획법 | `REPEAT` | [Link](./230829_Longest-Increasing-Subsequence.js)                 |
 | https://leetcode.com/problems/word-break                                     |                | Medium | 동적계획법 | `REPEAT` | [Link](./230828_Word-Break.js)                                     |
 | https://leetcode.com/problems/combination-sum-iv                             |                | Medium | 동적계획법 | `REPEAT` | [Link](./230830_Combination-Sum-IV.js)                             |
+| https://leetcode.com/problems/house-robber                                   |                | Medium | 동적계획법 | `REPEAT` | [Link](./230830_House-Robber.js)                                   |
