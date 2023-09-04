@@ -25,3 +25,4 @@
 | https://leetcode.com/problems/combination-sum-iv                             |                | Medium | 동적계획법 | `REPEAT` | [Link](./230830_Combination-Sum-IV.js)                             |
 | https://leetcode.com/problems/house-robber                                   |                | Medium | 동적계획법 | `REPEAT` | [Link](./230830_House-Robber.js)                                   |
 | https://leetcode.com/problems/decode-ways)                                   |                | Medium | 동적계획법 | `REPEAT` | [Link](./230903_Decode-Ways.js)                                    |
+| https://leetcode.com/problems/unique-paths/                                  |                | Medium | 동적계획법 | `REPEAT` | [Link](./230904_Unique-Paths.js)                                   |
