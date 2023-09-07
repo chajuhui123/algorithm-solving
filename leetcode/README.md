@@ -27,3 +27,4 @@
 | https://leetcode.com/problems/decode-ways                                    |                | Medium | 동적계획법 | `REPEAT` | [Link](./230903_Decode-Ways.js)                                    |
 | https://leetcode.com/problems/unique-paths/                                  |                | Medium | 동적계획법 | `REPEAT` | [Link](./230904_Unique-Paths.js)                                   |
 | https://leetcode.com/problems/jump-game                                      |                | Medium | 동적계획법 | `SOLVE`  | [Link](./230906_jump-game.js)                                      |
+| https://leetcode.com/problems/valid-anagram                                  |                | EASY   | 시뮬레이션 | `SOLVE`  | [Link](./230907_Valid-Anagram.js)                                  |
